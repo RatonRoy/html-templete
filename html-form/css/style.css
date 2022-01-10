@@ -19,14 +19,14 @@ form{
   margin: 2rem auto; 
   box-shadow: var(--lightShadow);
 }
-input[type = text]{
+input[type = text],input[type = email], input[type = password]{
   width: 90%;
   padding: 0.5rem 1rem 0.5rem 0;
   border-style: solid;
   border-color: grey;
   border-width: 0px 0px 1px 0; 
 }
-input[type = text]::placeholder {
+input[type = text],::placeholder {
   color: red;
   text-align: center;
   letter-spacing: 4px;
@@ -36,7 +36,8 @@ input:focus{
   color: black;
   /* padding: 1rem 1.5rem; */
   font-size: 1rem;
-  letter-spacing: 1px;
+  letter-spacing: 1px; 
+  /* margin-left: 2rem; */
 }
 label{
   text-transform: capitalize; 
@@ -49,4 +50,10 @@ label{
   color: blue;
   font-size: 1.7rem; 
   margin-top: 0.5rem;
+}
+.single-form{
+  padding: 1rem 0;
+}
+select option{
+  padding: 0.5rem;
 }
